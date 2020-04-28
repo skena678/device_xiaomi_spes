@@ -96,6 +96,12 @@ ro.nfc.port=I2C
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
+# Qcom
+ro.vendor.qti.va_aosp.support=1
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_provider_model=false
