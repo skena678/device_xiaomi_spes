@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2017-2018 The LineageOS Project
+                   2017-2021 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,8 +21,11 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -34,8 +37,8 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".BootCompletedReceiver">
-            <intent-filter>
+        <receiver android:name=".BootCompletedReceiver" android:exported="true">
+            <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -90,6 +93,39 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/dc_dimming_enable_summary" />
         </activity>
+
+        <activity 
+            android:name=".refreshrate.RefreshActivity" 
+            android:label="@string/refresh_title" 
+            android:exported="false" 
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action 
+                android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category" 
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data 
+                android:name="com.android.settings.summary" 
+                android:resource="@string/refresh_summary" />
+        </activity>
+
+        <service 
+            android:name=".refreshrate.RefreshService" 
+            android:exported="true" 
+            android:permission="RefreshService">
+        </service>
+
+        <service 
+            android:name=".RefreshRateTileService" 
+            android:icon="@drawable/ic_qs_refresh_rate" 
+            android:label="@string/refresh_rate_tile_title" 
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"> 
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter> 
+        </service>
 
     </application>
 </manifest>
