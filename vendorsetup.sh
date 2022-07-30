@@ -27,3 +27,6 @@ else
 echo -e "${color}Source patches already merged${end}"
 fi
 sleep 1
+
+# Remove pixel headers to avoid conflicts
+rm -rf hardware/google/pixel/kernel_headers/Android.bp
