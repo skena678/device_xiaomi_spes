@@ -208,6 +208,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0.vendor
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libdisplayconfig.system.qti \
