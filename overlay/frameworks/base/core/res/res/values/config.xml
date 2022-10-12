@@ -721,4 +721,7 @@
 
     <!-- Whether to cancel fingerprint operation if not idle -->
     <bool name="config_fpCancelIfNotIdle">true</bool>
+
+    <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
+   <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 </resources>
