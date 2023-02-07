@@ -8,3 +8,5 @@ allow platform_app hal_dms_default:binder { call transfer };
 
 # Face Unlock
 get_prop(platform_app, vendor_camera_prop)
+
+get_prop(platform_app, audio_config_prop);
