@@ -736,4 +736,7 @@
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
    <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
+    <!-- Whether or not wcg mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
 </resources>
