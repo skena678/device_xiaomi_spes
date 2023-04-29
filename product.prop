@@ -59,3 +59,9 @@ persist.sys.fw.trim_enable_memory?=2147483648
 persist.sys.fw.bservice_age?=120000
 persist.sys.fw.bservice_limit?=6
 persist.sys.fw.bservice_enable?=true
+
+# Google Photos
+debug.photos.eraser_camo=1
+debug.photos.eraser_suggestion=1
+debug.photos.force_pixel_eol=1
+debug.photos.p_editr.eraser=1
