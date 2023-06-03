@@ -834,7 +834,6 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
 -system_ext/app/uceShimService/uceShimService.apk
--system_ext/priv-app/ims/ims.apk
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/lib64/lib-imsvideocodec.so
@@ -909,6 +908,9 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
+
+# IMS - from renoir
+-system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
