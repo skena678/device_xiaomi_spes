@@ -8,3 +8,6 @@ sleep 1
 
 # Remove pixel headers to avoid conflicts
 rm -rf hardware/google/pixel/kernel_headers/Android.bp
+
+# ViperX
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX --depth=1
