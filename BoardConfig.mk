@@ -249,3 +249,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/spes/BoardConfigVendor.mk
+
+# Inherit from proprietary files for MiSound
+-include vendor/xiaomi/spes-misound/BoardConfigMiSound.mk
