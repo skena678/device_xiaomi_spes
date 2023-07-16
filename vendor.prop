@@ -274,3 +274,6 @@ ro.soc.model=SM6225
 
 # Zygote
 zygote.critical_window.minute=10
+
+# FS-verity
+ro.apk_verity.mode=2
