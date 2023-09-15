@@ -220,7 +220,7 @@ BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := bengal
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
