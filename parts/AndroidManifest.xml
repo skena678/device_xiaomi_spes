@@ -42,8 +42,6 @@
             </intent-filter>
         </receiver>
 
-        <activity
-
         <service
             android:name=".display.DcDimmingTileService"
             android:icon="@drawable/ic_dc_tile"
