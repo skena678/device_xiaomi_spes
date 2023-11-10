@@ -42,6 +42,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
+            android:exported="false"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -55,6 +56,7 @@
         
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
+            android:exported="false"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -70,6 +72,7 @@
 
         <service
             android:name=".display.DcDimmingTileService"
+            android:exported="false"
             android:icon="@drawable/ic_dc_tile"
             android:label="@string/dc_dimming_enable_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -81,12 +84,14 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
+	        android:exported="false"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase">
         </activity>
 
         <activity
             android:name=".display.DcDimmingSettingsActivity"
+            android:exported="false"
             android:label="@string/dc_dimming_enable_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -120,6 +125,7 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
+            android:exported="false"
             android:label="@string/thermal_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -144,6 +150,7 @@
 
         <service 
             android:name=".RefreshRateTileService" 
+            android:exported="false"
             android:icon="@drawable/ic_qs_refresh_rate" 
             android:label="@string/refresh_rate_tile_title" 
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"> 
