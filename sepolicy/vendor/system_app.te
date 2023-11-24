@@ -8,3 +8,8 @@ allow system_app sysfs_msm_subsys:dir search;
 allow system_app proc_tp_gesture:file rw_file_perms;
 
 get_prop(system_app, vendor_persist_camera_prop)
+r_dir_file(system_app, vendor_sysfs_battery_supply)
+
+allow system_app vendor_sysfs_battery_supply:dir { search };
+allow system_app vendor_sysfs_battery_supply:file { getattr open read };
+
