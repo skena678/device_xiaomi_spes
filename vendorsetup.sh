@@ -10,6 +10,5 @@ sleep 1
 rm -rf hardware/google/pixel/kernel_headers/Android.bp
 
 # ViperX
-git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX --depth=1
 git clone https://github.com/kenway214/vendor_bcr.git vendor/bcr
 git clone https://github.com/muralivijay/vendor_xiaomi_spes-misound vendor/xiaomi/spes-misound

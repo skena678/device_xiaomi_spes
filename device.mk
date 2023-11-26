@@ -27,9 +27,6 @@ endif
 # Call the BCR setup
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
-# Inherit from ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Enable Dynamic partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
