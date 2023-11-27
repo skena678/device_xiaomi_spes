@@ -117,9 +117,13 @@ on boot
 
     # Governor settings
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us_screen_off 2000
     write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq 1516000
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us_screen_off 2000
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us_screen_off 2000
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1344000
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us_screen_off 2000
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1344000"
     write /sys/module/cpu_boost/parameters/input_boost_ms 120
 
