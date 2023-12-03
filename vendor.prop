@@ -277,3 +277,6 @@ zygote.critical_window.minute=10
 
 # FS-verity
 ro.apk_verity.mode=2
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
