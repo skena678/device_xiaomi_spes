@@ -2,7 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="maintainer_name">Agatha</string>
-    <string name="github_username">agathasenpai</string> 
-    <string name="telegram_username">agathasenpai7</string>
+    <string name="maintainer_telegram">https://t.me/agathaproject</string>
 
 </resources>
